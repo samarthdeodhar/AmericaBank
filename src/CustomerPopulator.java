@@ -10,7 +10,7 @@ public class CustomerPopulator {
                 = new BufferedReader(new FileReader(Customers));
         String st;
         String[] splitString;
-        //now
+        //now read each line from the data file and add customers.
         while ((st = br.readLine()) != null){
             splitString = st.split(" ");
             double depositAmount = Double.parseDouble(splitString[2]);
